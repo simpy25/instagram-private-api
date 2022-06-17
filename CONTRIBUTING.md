@@ -16,7 +16,7 @@ Occurs as the name suggests after a large amount of requests (in a short amount 
 **Fix:** Add a delay between the requests and/or use proxies for multiple accounts.
 
 ### IgCheckpointError or challenge_required
-See [this](https://github.com/dilame/instagram-private-api/blob/master/examples/checkpoint.example.ts).
+See [this](https://github.com/simpy25/instagram-private-api/blob/master/examples/checkpoint.example.ts).
  
 ### login_required
 This is thrown whenever your session is invalid.
@@ -72,7 +72,7 @@ The signature key is used to sign requests.
 ## Capturing TLS Requests
 
 MQTT and FBNS are currently not implemented in the main library as they're not ready.
-You can see the current development [here](https://github.com/dilame/instagram-private-api/issues/845).
+You can see the current development [here](https://github.com/simpy25/instagram-private-api/issues/845).
 They are built using MQTT (v3 and for FBNS a custom implementation of v3) and [Thrift](https://thrift.apache.org/)
 You'll probably have to use a Hex Editor for that.
 

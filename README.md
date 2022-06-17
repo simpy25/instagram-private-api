@@ -31,7 +31,7 @@ The new version is hosted in private repository. Access is paid.
 Members get **basic** support for installation, configuration, and usage.
 We also will try to react on your feature requests.
 
-You can contact me in [telegram](https://t.me/bowzee) or [email](mailto:dilame.bowzee@gmail.com) for details.
+You can contact me in [telegram](https://t.me/bowzee) or [email](mailto:simpy25.bowzee@gmail.com) for details.
 
 # Table of Contents
 
@@ -59,7 +59,7 @@ npm install instagram-private-api
 From github
 
 ```
-npm install github:dilame/instagram-private-api
+npm install github:simpy25/instagram-private-api
 ```
 
 This package uses [`url-regex-safe`](https://www.npmjs.com/package/url-regex-safe) ([GitHub](https://github.com/spamscanner/url-regex-safe)) to check for links when sending direct messages.

@@ -17,16 +17,16 @@ Your issue will be closed if you violate any rule below.
   (not your entire project and not a single line).
  - Please **do not add screenshots** as they're not easy to work with.
  - Errors like `IgActionSpamError (feedback_required)`, `IgCheckpointError (challenge_required)`, `checkpont_required`, `login_required`
-    are "common" and there are multiple issues, [search here](https://github.com/dilame/instagram-private-api/issues).
+    are "common" and there are multiple issues, [search here](https://github.com/simpy25/instagram-private-api/issues).
  - You can delete this section after reading it.
  
 ## Form
 Put an `[x]` if you meet the condition, else leave `[ ]`.
 #### Requirements
- - [ ] I've searched the [Issues](https://github.com/dilame/instagram-private-api/issues)
- - [ ] I've read the [basic concepts](https://github.com/dilame/instagram-private-api#basic-concepts)
+ - [ ] I've searched the [Issues](https://github.com/simpy25/instagram-private-api/issues)
+ - [ ] I've read the [basic concepts](https://github.com/simpy25/instagram-private-api#basic-concepts)
  - [ ] I'm using the latest version
- - [ ] I've [debugged](https://github.com/dilame/instagram-private-api#debugging) my code using the `DEBUG` variable.
+ - [ ] I've [debugged](https://github.com/simpy25/instagram-private-api#debugging) my code using the `DEBUG` variable.
 #### Platform
  - [ ] I'm using Node.js version `YOUR_VERSION (node -v)`
  - [ ] I'm using electron

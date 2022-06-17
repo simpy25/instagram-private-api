@@ -36,7 +36,7 @@ ig.state.generateDevice(process.env.IG_USERNAME);
 })();
 
 /**
- * Source: https://github.com/dilame/instagram-private-api/issues/969#issuecomment-551436680
+ * Source: https://github.com/simpy25/instagram-private-api/issues/969#issuecomment-551436680
  * @param feed
  * @returns All items from the feed
  */

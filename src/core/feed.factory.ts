@@ -130,7 +130,7 @@ export class FeedFactory {
     return feed;
   }
 
-  public tags(tag: string, tab: 'top' | 'recent' | 'places' = 'top'): TagsFeed {
+  public tags(tag: string, tab: 'top' | 'recent' | 'places' | 'reels' = 'top'): TagsFeed {
     const feed = new TagsFeed(this.client);
     feed.tag = tag;
     feed.tab = tab;

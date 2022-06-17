@@ -12,14 +12,14 @@
     "node": ">=8.0.0"
   },
   "bugs": {
-    "url": "https://github.com/dilame/instagram-private-api/issues",
-    "email": "dilame.nickolson@gmail.com"
+    "url": "https://github.com/simpy25/instagram-private-api/issues",
+    "email": "simpy25.nickolson@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dilame/instagram-private-api.git"
+    "url": "https://github.com/simpy25/instagram-private-api.git"
   },
-  "homepage": "https://github.com/dilame/instagram-private-api",
+  "homepage": "https://github.com/simpy25/instagram-private-api",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
