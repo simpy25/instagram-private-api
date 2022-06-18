@@ -5,7 +5,7 @@ import { TagsFeedResponse, TagsFeedResponseMedia } from '../responses';
 
 export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
   tag: string;
-  tab: 'top' | 'recent' | 'places' | 'reels';
+  tab: 'top' | 'recent' | 'places' | 'reels' | 'clips';
   @Expose()
   private nextMaxId: string;
   @Expose()
