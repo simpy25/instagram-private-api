@@ -29,6 +29,7 @@ export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
         tab: this.tab,
         _uuid: this.client.state.uuid,
         session_id: this.client.state.clientSessionId,
+        include_persistent: true,
         page: this.nextPage,
         next_media_ids: this.nextPage ? JSON.stringify(this.nextMediaIds) : void 0,
         max_id: this.nextMaxId,
