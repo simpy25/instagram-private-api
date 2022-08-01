@@ -30,6 +30,7 @@ export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
         _uuid: this.client.state.uuid,
         session_id: this.client.state.clientSessionId,
         include_persistent: true,
+        count: 50,
         page: this.nextPage,
         next_media_ids: this.nextPage ? JSON.stringify(this.nextMediaIds) : void 0,
         max_id: this.nextMaxId,
@@ -43,8 +44,6 @@ export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
     const response = await this.request();
     return flatten(
       response.sections.map(section => {
-        if (section.layout_type !== 'media_grid') return;
-
         return section.layout_content.medias.map(medias => medias.media);
       }),
     );
