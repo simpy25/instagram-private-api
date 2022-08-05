@@ -15,9 +15,11 @@ export abstract class Feed<Response = any, Item = any> extends Repository {
     maxDelay: 300000,
     jitter: true,
   };
+
   public get items$() {
     return this.observable();
   }
+
   public observable(semaphore?: () => Promise<any>, attemptOptions?: Partial<AttemptOptions<any>>) {
     return new Observable<Item[]>(observer => {
       let subscribed = true;
@@ -59,6 +61,7 @@ export abstract class Feed<Response = any, Item = any> extends Repository {
       };
     });
   }
+
   @Expose()
   protected moreAvailable: boolean;
   @Enumerable(false)
@@ -70,7 +73,7 @@ export abstract class Feed<Response = any, Item = any> extends Repository {
 
   abstract request(...args: any[]): Promise<Response>;
 
-  abstract items(): Promise<Item[]>;
+  abstract items(amount?: number): Promise<Item[]>;
 
   public serialize() {
     return serialize(this, { strategy: 'excludeAll' });

@@ -20,7 +20,7 @@ export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
     this.nextMediaIds = body.next_media_ids;
   }
 
-  public async request() {
+  public async request(amount: number) {
     const { body } = await this.client.request.send<TagsFeedResponse>({
       url: `/api/v1/tags/${encodeURI(this.tag)}/sections/`,
       method: 'POST',
@@ -30,7 +30,7 @@ export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
         _uuid: this.client.state.uuid,
         session_id: this.client.state.clientSessionId,
         include_persistent: true,
-        count: 50,
+        count: amount,
         page: this.nextPage,
         next_media_ids: this.nextPage ? JSON.stringify(this.nextMediaIds) : void 0,
         max_id: this.nextMaxId,
@@ -40,8 +40,8 @@ export class TagsFeed extends Feed<TagsFeedResponse, TagsFeedResponseMedia> {
     return body;
   }
 
-  public async items() {
-    const response = await this.request();
+  public async items(amount: number) {
+    const response = await this.request(amount);
     return flatten(
       response.sections.map(section => {
         return section.layout_content.medias.map(medias => medias.media);
